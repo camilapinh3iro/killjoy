@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../img/background-image.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: 10vh 65vh 25vh;
+    
+    background-color:  #0F1923;
+    
+}
+header {
+    grid-area: header;
+    background-color:  #FF4654 ;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    
+    align-items: center;
+
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+    gap: 30px;
+}
+
+header nav a {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #131723;
+    font-weight: bold;
+}
+
+.logos-menu{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+.logos-menu img{
+    margin-left: 30px;
+}
+
+.container{
+    /* display: grid;
+    grid-template-columns: 500px; */
+    margin-left: 64px;
+}
+
+
+main{
+    grid-template-areas: main;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.texto{
+    display: grid;
+
+}
+.title{
+    position: relative;
+}
+
+
+
+h1{
+    color: #FF4654;
+    font-size: 8rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    /* font-weight: 800; */
+}
+h2{
+    color: #fff;
+    position: absolute;
+    top: 130px;
+    margin-left: 290px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
+h3{
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+.sobre{
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+
+}
+.button_join{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.button_join button{
+    background-color:#FF4654;
+    color: #fff;
+    width: 150px;
+    height: 50px ;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid #fff;
+}
+
+
+.valorant_text{
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 64px;
+  
+}
+
+
+
+.image_killjoy {
+    position: absolute;
+    width: 600px;
+    height: 800px;
+    right: 100px;
+    top: 70px;
+}
+
+.image_killjoy img{
+    width: 550px;
+    height: 800px;
+}
+
+.sobre p {
+    font-size: 0.9rem;
+    width: 400px;
+}
+
+footer{
+    grid-template-areas: footer;
+    /* background-color: #0F1923; */
+    display: flex;
+}
+
+.patch{
+    margin-left: 64px;
+    background-color: #fff;
+    width: 260px;
+    height: 110px;
+    display: grid;
+    grid-template-areas: "image-patch conteiner-patch";
+    grid-template-columns: 1fr 2fr;
+}
+
+.patch img{
+    grid-area:image-patch ;
+    width: 80px;
+    height: 80px;
+    margin-top: 14px;
+    
+}
+
+.patch span{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.valorant-patch-notes{
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+    margin-top: 20px;
+}
+
+.patch-version{
+    color: #FF4654;
+}
+
+.mais{
+    color: #FF4654;
+}
+
+.conteiner-patch p{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+    
+}
+
+
+.conteiner-patch{
+    grid-area: conteiner-patch;
+    width: 50px;
+    display: grid;
+    grid-template-columns: 160px;
+    grid-template-rows: 40px 2fr 1fr;
+    padding-left: 10px;
+    
+    
+}
+
+    .conteiner-patch p{
+        width: 130px;
+        font-size: 9px;
+    }
+
+.icones {
+    color: #0F1822;
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    
+  }
+  
+.icones i + i {
+  margin-left: 10px;
+  }
+  
+.see-more {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    font-weight: 700;
+    /* padding-top: 30px; */
+    /* margin-bottom: 20px; */
+    margin-left: 80px;
+  }
+  
+.see-more::after {
+    content: "+";
+    color: #ff4654;
+    /* padding-left: 1px; */
+    font-weight: bold;
+
+  }
