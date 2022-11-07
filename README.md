@@ -1,6 +1,6 @@
 # Killjoy 
 
-![]()
+![](./img/captura-tela.png)
 
 [Clique aqui](https://camilapinh3iro.github.io/killjoy/) para acessar o site 
 
